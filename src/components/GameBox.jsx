@@ -17,7 +17,7 @@ const GameBox = ({ totalCards, returnMenu }) => {
     const fetchPokemonData = async () => {
       try {
         // const url = `https://pokeapi.co/api/v2/pokemon?offset=${totalCards}&limit=${totalCards}`;
-        const url = `http://34.201.66.178:5000/api?limit=${totalCards}`;
+        const url = `https://odin-pokemon-server-2-production.up.railway.app?limit=${totalCards}`;
         const response = await fetch(url, {
           mode: "cors",
           signal: controller.signal,
